@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 
 const app = express();
-app.use(express.json())
+app.use(express.json());
 
 require('dotenv').config();
 
@@ -19,7 +19,7 @@ app.get('/test', (req, res) => {
             res.send(error.message);
         }
 
-        res.send({data: 'Connected to the MySQl server. 🔥'})
+        res.send({data: 'Connected to the MySQl server. 🔥'});
     });
 });
 
